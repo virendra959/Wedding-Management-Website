@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #b76e79;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+#bg_box{
+    width:100%;
+    height: 800px;
+    background-image:url(images/w3.png);
+    background-size: 100% 800px;
+    transition: 0.3s;
+
+}
+#bg_box:hover {
+    transform: translateY(-8px);
+}
+
+.hero button {
+    padding: 10px 25px;
+    background: #b76e79;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #944f5a;
+}
+
+.services {
+    padding: 50px;
+    text-align: center;
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background:rgba(231, 247, 24, 0.31);
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+
+.gallery {
+    background: #f2f2f2;
+    padding: 50px;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.img-box {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+
+
+}
+#img1{
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius:10px;
+
+}
+#img1:hover {
+    transform: translateY(-8px);
+}
+
+/* Contact */
+#contact {
+    padding: 50px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#contact button {
+    padding: 10px;
+    width: 100%;
+    background: #b76e79;
+    color: white;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color:black ;
+    height: 250px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+#contacters{
+    float: center;
+    font-size: 25px;
+    justify-content: center;
+}
+#developer{
+    float: right;
+    font-size: 20px;
+}
