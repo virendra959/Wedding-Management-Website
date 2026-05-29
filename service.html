@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Services</title>
+	<style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #b76e79;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+#services {
+    padding: 50px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #b76e79;
+}
+
+#service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    margin: 15px 0 5px;
+    color: #333;
+}
+
+.service-card p {
+    padding: 0 15px 20px;
+    color: #666;
+    font-size: 14px;
+}
+footer {
+    background-color:black ;
+    height: 250px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+#contacters{
+    float: center;
+    font-size: 25px;
+    justify-content: center;
+}
+#developer{
+    float: right;
+    font-size: 20px;
+}
+
+	</style>
+</head>
+<body>
+  <header>
+    <div class="logo">💍 Dream Wedding</div>
+    <nav>
+        <a href="C:\Users\ADMIN\Desktop\wedding/wed.html">Home</a>
+        <a >Services</a>
+        <a href="C:\Users\ADMIN\Desktop\wedding/gallery.html">Gallery</a>
+        <a href="#contacters">Contact</a>
+    </nav>
+</header>
+
+
+
+<section id="services">
+    <h2>Our Wedding Services</h2>
+
+    <div id="service-container">
+
+        <div class="service-card" id="service1">
+            <img src="images/w5.png" alt="Decoration">
+            <h3>Venue Decoration</h3>
+            <p>Beautiful and royal wedding decorations</p>
+        </div>
+
+        <div class="service-card" id="service2">
+            <img src="images/catering.png" alt="Catering">
+            <h3>Catering Service</h3>
+            <p>Delicious food for all guests</p>
+        </div>
+
+        <div class="service-card" id="service3">
+            <img src="images/photo.png" alt="Photography">
+            <h3>Photography & Video</h3>
+            <p>Capture every special moment</p>
+        </div>
+
+        <div class="service-card" id="service4">
+            <img src="images/bridal.png" alt="Makeup">
+            <h3>Bridal Makeup</h3>
+            <p>Professional bridal makeup services</p>
+        </div>
+
+        <div class="service-card" id="service5">
+            <img src="images/dj.png" alt="Music">
+            <h3>DJ & Music</h3>
+            <p>DJ, band and sound system</p>
+        </div>
+
+        <div class="service-card" id="service6">
+            <img src="images/invitation.png" alt="Invitation">
+            <h3>Invitation Cards</h3>
+            <p>Creative wedding invitation designs</p>
+        </div>
+
+        <div class="service-card" id="service7">
+            <img src="images/car.png" alt="Car">
+            <h3>Wedding Cars</h3>
+            <p>Luxury cars for bride & groom</p>
+        </div>
+
+        <div class="service-card" id="service8">
+            <img src="images/planing.png" alt="Planning">
+            <h3>Wedding Planning</h3>
+            <p>Complete wedding management</p>
+        </div>
+
+    </div>
+</section>
+<footer>
+   <p style="float: left; font-size: 20px;">© 2026 Dream Wedding Planner | All Rights Reserved</p>
+                 <p id="developer">developed By : Virendra Kumar,Premchand Kumar,Tejashree Chalwadi </p>
+           
+            <div id="contacters">
+                <address > contacters </address>
+               <pre> <address>Website: Wedding Planner.Com</address></pre>
+                <address>Email:virendra.mumbai2001@gmail.com,<br>
+                        premchand.b.mandal@slrtce.in</address>
+                <address>phone no: +91 9594041346,+91 8210827034</address>
+                <address>Address: Andheri west.</address>
+
+            </div>
+</footer>
+
+</body>
+</html>
