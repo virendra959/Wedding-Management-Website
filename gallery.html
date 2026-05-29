@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Wedding images </title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+    header {
+    background: #b76e79;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    padding:20px;
+}
+.box{
+    width: 300px;
+    height: 220px;
+    background: #b76e79;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid black;
+   
+}
+.box:hover{
+    transform: translateY(10px);
+}
+
+
+#box_img{
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+    transition: 0.3s;
+
+
+}
+
+footer {
+    background-color:black ;
+    height: 250px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+#contacters{
+    float: center;
+    font-size: 25px;
+    justify-content: center;
+}
+#developer{
+    float: right;
+    font-size: 20px;
+}
+</style>
+
+<body>
+     <header>
+    <div class="logo">💍 Dream Wedding</div>
+    <nav>
+        <a href="C:\Users\ADMIN\Desktop\wedding/wed.html">Home</a>
+        <a href="C:\Users\ADMIN\Desktop\wedding/service.html">Services</a>
+        <a >Gallery</a>
+        <a href="#contacters">Contact</a>
+    </nav>
+</header>
+    <h1 style="text-align: center; background-color:yellow;">Wedding Images</h1>
+
+
+<div id="box-container">
+    <div class="box"><img src="images/w.png" id="box_img"></div>
+    <div class="box"><img src="images/w3.png" id="box_img"></div>
+    <div class="box"><img src="images/w3.jpg" id="box_img"></div>
+    <div class="box"><img src="images/W4.png" id="box_img"></div>
+    <div class="box"><img src="images/w5.png" id="box_img"></div>
+    <div class="box"><img src="images/bridal.png" id="box_img"></div>
+    <div class="box"><img src="images/car.png" id="box_img"></div>
+    <div class="box"><img src="images/catering.png" id="box_img"></div>
+    <div class="box"><img src="images/dj.png" id="box_img"></div>
+    <div class="box"><img src="images/invitation.png" id="box_img"></div>
+    <div class="box"><img src="images/photo.png" id="box_img"></div>
+    <div class="box"><img src="images/planing.png" id="box_img"></div>
+    <div class="box"><img src="images/w6.png" id="box_img"></div>
+    <div class="box"><img src="images/w7.png" id="box_img"></div>
+    <div class="box"><img src="images/w8.png" id="box_img"></div>
+</div>
+<footer>
+   <p style="float: left; font-size: 20px;">© 2026 Dream Wedding Planner | All Rights Reserved</p>
+                 <p id="developer">developed By : Virendra Kumar,Premchand Kumar,Tejashree Chalwadi </p>
+           
+            <div id="contacters">
+                <address > contacters </address>
+               <pre> <address>Website: Wedding Planner.Com</address></pre>
+                <address>Email:virendra.mumbai2001@gmail.com,<br>
+                        premchand.b.mandal@slrtce.in</address>
+                <address>phone no: +91 9594041346,+91 8210827034</address>
+                <address>Address: Andheri west.</address>
+
+            </div>
+</footer>
+
+</body>
+</html>
