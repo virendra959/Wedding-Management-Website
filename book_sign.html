@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> </title>
+    <style>
+        .book-btn{
+  padding:12px 30px;
+  background:#b76e79;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+  font-size:16px;
+}
+
+/* popup background */
+.popup{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  display:none;
+  z-index:1000;
+}
+
+/* show popup */
+.popup:target{
+  display:block;
+}
+
+/* popup box */
+.popup-box{
+  background:white;
+  width:360px;
+  margin:100px auto;
+  padding:25px;
+  border-radius:10px;
+  position:relative;
+}
+
+.popup-box input,
+.popup-box select,
+.popup-box textarea{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+}
+
+.popup-box button{
+  width:100%;
+  padding:10px;
+  background:#b76e79;
+  color:white;
+  border:none;
+  font-size:16px;
+}
+
+.close{
+  position:absolute;
+  top:10px;
+  right:15px;
+  text-decoration:none;
+  font-size:18px;
+  color:black;
+}
+
+
+    </style>
+</head>
+<body>
+<div id="signup" class="popup">
+  <div class="popup-box">
+    <h2>Sign Up</h2>
+
+    <form action="#wedding-form">
+      <input type="email" placeholder="Email ID" required>
+      <input type="password" placeholder="Password" required>
+
+      <button type="submit">Continue</button>
+    </form>
+
+    <a href="C:\Users\ADMIN\Desktop\wedding/wed.html" class="close">Close</a>
+  </div>
+</div>
+
+
+<div id="wedding-form" class="popup">
+  <div class="popup-box">
+    <h2>Wedding Booking Form</h2>
+
+    <form  action="save.php" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Mobile Number" required>
+
+      <label>Wedding Date</label>
+      <input name="wedding_date" type="date" required>
+
+      <label>Wedding Type</label>
+      <select name="wedding_type" required>
+        <option value="">Select</option>
+        <option>Traditional</option>
+        <option>Destination</option>
+        <option>Royal</option>
+        <option>Beach</option>
+      </select>
+
+      <textarea name="message" placeholder="Extra Requirements"></textarea>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+
+    <a href="C:\Users\ADMIN\Desktop\wedding/wed.html" class="close">✖</a>
+  </div>
+</div>
+
+<div id="success" class="popup">
+  <div class="popup-box">
+    <h2>✅ Booking Successful</h2>
+    <p>Your wedding details have been submitted successfully.</p>
+    <a href="C:\Users\ADMIN\Desktop\wedding/wed.html" class="book-btn">Close</a>
+  </div>
+</div>
+
+
+</body>
+</html>
